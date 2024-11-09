@@ -13,8 +13,8 @@ function calculatePresentScore() {
         return;
     }
 
-    // Calculation logic
-    const exponentPart = (optimalSum - Math.abs(optimalSum - price)) / optimalSum;
+    // Updated Calculation logic
+    const exponentPart = ((optimalSum - Math.abs(optimalSum - price)) / optimalSum) * 10;  // Multiply by 10
     const score = (empathy * 2) - selfishness + usefulness + surprise + Math.pow(exponentPart, 2);
     const averageScore = score / 4;
 
