@@ -6,18 +6,29 @@
     <title>Christmas Present Calculator</title>
 </head>
 <body>
-    <h1>Christmas Present Calculator</h1>
-    <p>Answer the questions below to find out how good your Christmas present is!</p>
+    <h1>Christmas Present Calculator 🎄</h1>
     
-    <!-- Example Question -->
-    <label for="question1">Does it bring joy? (Yes/No):</label>
-    <input type="text" id="question1"><br><br>
+    <label for="price">Vad kostade din julklappen? (sek)</label>
+    <input type="number" id="price"><br><br>
 
-    <!-- Display Result -->
+    <label for="optimalSum">Vad var den optimala summan på din julklappen? (sek)</label>
+    <input type="number" id="optimalSum"><br><br>
+
+    <label for="empathy">Hur empatiskt observerat var din julklapp? (1-10)</label>
+    <input type="number" id="empathy" min="1" max="10"><br><br>
+
+    <label for="usefulness">Hur användbar är julklappen? (1-10)</label>
+    <input type="number" id="usefulness" min="1" max="10"><br><br>
+
+    <label for="surprise">Hur överraskande är din julklapp? (1-10)</label>
+    <input type="number" id="surprise" min="1" max="10"><br><br>
+
+    <label for="selfishness">Hur självisk är din julklapp? (1-10)</label>
+    <input type="number" id="selfishness" min="1" max="10"><br><br>
+
     <button onclick="calculatePresentScore()">Calculate Score</button>
     <p id="result"></p>
 
-    <!-- Link to JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
